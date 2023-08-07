@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            height: 80vh;
+            width: 80%;
+            border: 1px solid black;
+            position: relative;
+            /* background-image: url(); */
+        }
+        h1{margin: 1rem;}
+        input{margin: 1rem;}
+        .msg{
+            width: 30%;
+            height: 25%;
+            left: 10%;
+            top: 30%;
+            border: 1px solid black;
+            background-color: #f72512;
+            position: absolute;
+            height: auto;
+            width: auto;
+        }
+        .msg{
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            flex-direction: column;
+        }
+        .check{display: none;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="head" style="width: 100%;display: flex;justify-content: center;align-items: center;flex-direction: column;padding: 1rem;">
+            <h1>Enter anyone's number to track location</h1>
+        <input type="text" class="value" placeholder="Enter phone number"; style="width: 20rem;" required>
+        <button class="btn">Search Location</button>
+        </div>
+        <div class="hack"></div>
+        <div class="check msg">
+            <div style="display: flex;justify-content: center;align-items: center;">
+            <!-- <div style="width: 50px;height: 50px;">
+            <img src="./warning.jpg" alt="" style="width: 100%;height: 100%;">
+            </div> -->
+            <h2>!WARNING</h2>
+        </div>
+        <h3>Hacking detected. Please shut down your phone immediately. Malware is attempting to access your gallery.</h3>
+        </div>
+        
+    </div>
+</body>
+</html>
+<script>
+    var a = document.querySelector(".hack");
+    var btn = document.querySelector(".btn");
+    var value = document.querySelector(".value");
+    var con = document.querySelector(".container");
+    var head = document.querySelector(".head");
+    var body = document.querySelector("body");
+    var msg = document.querySelector(".msg");
+    var lag = ["sdfkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk  sdfjowjaojopwoejfj pj fpo1smoqmanzmozmqowm pqwpkejw we rwuoiruoiwrmmwnmnbv ipiepoqwiepo qw[eoriwpir uiou cN><MNXCmC ou  o uqwou q   oeuioqu woei uo q uioq wioe ,cm,m.c  Cupupuqeuoquoouoweurouoqwurouwq e uerqpewqpwkm1230-18249 0- 0-0 ```-0- E-] KLJSLKFJIOJIO123OI1HIO23IO1HI3A.,FN,.A[12-304==0 -=0 ;''] JLH KASDHJF"];
+    var glob = 0;
+    var get_value = null;
+    var randomInt = null;
+    var imageUrl = "./hacking.jpg";
+    var colors = ["red","blue","orange","purple","black","#da1010","#b30707","#1d88e7"]
+    btn.addEventListener("click",function(){
+        head.style.display = "none";
+        get_value = value.value;
+        setInterval(hack, 100);
+        setInterval(color,100);
+        // classRemoving();
+            classRemoving();
+    });
+
+function hack(){
+    con.innerHTML += `<h2>You are Hacked body</h2>` +"<br>"+"don't try to close website otherwise you will be reponsible for your own actions!!! ";
+    glob++;
+    console.log(glob);
+}
+function color(){
+  var temp = Math.floor(Math.random() * 11);
+  con.style.backgroundColor = colors[temp];
+  body.style.backgroundImage = `url('${imageUrl}')`;
+//   looping();
+}
+function lagPrint(){console.log(lag)}
+function looping(){
+for(var i = 0; i > 0; i++){
+    console.log(i);
+}
+}
+
+</script>
